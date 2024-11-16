@@ -1,0 +1,21 @@
+main {
+  padding: 30px 0;
+  font-family: Roboto;
+}
+
+
+.container-mvp-app{
+  text-align: center;
+  background-color: aqua;
+  width: 80%;
+  height: 30rem;
+  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;  
+  border-radius: 2rem;
+}
+
+.container-mvp-app h1{
+  margin-top: 2rem;
+}
+

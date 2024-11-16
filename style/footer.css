@@ -1,0 +1,23 @@
+footer{
+display: flexbox;
+padding: 40px 100px;
+justify-content: center;
+align-items: center;
+color: #E3E8FF;
+}
+
+
+footer #line {
+    width: auto;
+    height: 2px;
+    background-color: aliceblue;
+}
+
+
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 10px 0;
+}
+

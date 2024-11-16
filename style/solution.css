@@ -1,0 +1,90 @@
+main {
+  padding: 20px 0;
+}
+
+/* BANNER */
+
+#container-banner {
+  background-image: url("../imgs/banner03.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#container-banner h1 {
+  padding-bottom: 50px;
+  font-family: Calistoga;
+  font-weight: lighter;
+  font-size: 7vw;
+  text-shadow: 1px 2px 55px black;
+  color: #ffffff;
+}
+
+#container-banner #arrow {
+  padding-bottom: 50px;
+}
+
+/* STEPS */
+
+#container-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4rem;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  width: 100%; /* Certifica-se de que cada artigo ocupe toda a largura do contêiner pai */
+  padding: 0 3rem 0 3rem;
+}
+
+.content {
+  /* margin: 0 20px; */
+  color: #e3e8ff;
+  font-size: 1.5rem;
+  font-family: Open Sans;
+  margin: 0 3rem;
+  width: 30%;
+}
+
+#container-steps h2 {
+  font-family: Calistoga;
+  font-size: 4.5rem;
+  margin-top: 5rem;
+  color: #e3e8ff;
+}
+
+#container-steps img{
+    width: 9rem;
+    margin: 3rem 0;
+}
+
+.arrow.two{
+    transform: rotate(13deg)
+}
+
+.arrow.three{
+    transform: rotate(-10deg)
+}
+
+.arrow.four{
+    transform: rotate(13deg)
+}
+
+.arrow.five{
+    transform: rotate(-15deg)
+}
+
+.arrow.six{
+    transform: rotate(13deg)
+}

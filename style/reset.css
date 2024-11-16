@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(0.25turn, #3B8FB3, #3559E0, #253E9F);
+    scroll-behavior: smooth;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.main-logo{
+    font-family: Calistoga;
+    font-size: 28px;
+    color: #E3E8FF;
+    margin-top: 1rem;
+}
+
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 0.8rem;
+
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: #797979;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222224;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 1rem;
+    background: #f9f9f9;
+  }
+  

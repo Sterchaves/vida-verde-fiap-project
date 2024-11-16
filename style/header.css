@@ -1,0 +1,37 @@
+
+nav {
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 0 30px;
+}
+
+/* LOGO */
+nav a {
+    color: #E3E8FF;
+}
+
+/* MENU */
+nav ul {
+    display: flex;
+    padding: 10px 20px;
+
+}
+
+nav ul li {
+    padding: 5px 20px;
+}
+
+nav ul li a {
+    color: #E3E8FF;
+    cursor: pointer;
+    transition: text-decoration 1.5s;  
+
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
