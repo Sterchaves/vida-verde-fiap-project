@@ -131,17 +131,19 @@ iframe{
 #container-video #text-video p {
     font-family: Open Sans;
     font-size: 18px;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
     align-self: flex-start;
 }
 
 
 
-#container-video #text-video ul {
+#container-video #text-video li{
     font-family: Open Sans;
-    font-size: 18px;
-    padding-bottom: 14px;
+    font-size: 16px;
+    padding-bottom: 4px;
     list-style:inside;
+    text-align: start;
+    
 }
 
 #container-video #text-video a {
