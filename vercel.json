@@ -1,5 +1,10 @@
 {
+    "public": "pages",
     "rewrites": [
-      { "source": "/", "destination": "/pages/home.html" }
+      { "source": "/", "destination": "/pages/home.html" },
+      { "source": "/challenges", "destination": "/pages/challenges.html" },
+      { "source": "/solution", "destination": "/pages/solution.html" },
+      { "source": "/mvp", "destination": "/pages/mvp.html" }
     ]
   }
+  
