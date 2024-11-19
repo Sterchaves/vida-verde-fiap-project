@@ -5,6 +5,12 @@
         "src": "pages/**/*.html",
         "use": "@vercel/static"
       }
+    ],
+    "routes": [
+      { "src": "/home", "dest": "/pages/home.html" },
+      { "src": "/challenges", "dest": "/pages/challenges.html" },
+      { "src": "/solution", "dest": "/pages/solution.html" },
+      { "src": "/mvp", "dest": "/pages/mvp.html" }
     ]
   }
   
