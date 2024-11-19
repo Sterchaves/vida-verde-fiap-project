@@ -65,43 +65,57 @@
         </ul>
 
         <div class="content">
-          <ul class="config-navbar">
-            <li><a href="#">Informações do Condomínio</a></li>
-            <li><a href="">??</a></li>
-          </ul>
-
-          <div class="content-config info">
+          <div class="form-container">
             <div class="form-config">
               <form action="#" method="POST">
+                <h3>Informações Gerais</h3>
+          
                 <label for="condo-name">Nome do Condomínio:</label>
                 <input type="text" id="condo-name" name="condo-name">
-            
+              
                 <label for="cnpj">CNPJ:</label>
                 <input type="text" id="cnpj" name="cnpj">
-            
-                <label for="address">Endereço:</label>
-                <input type="text" id="address" name="address">
-            
+              
                 <label for="units">Número de Unidades:</label>
                 <input type="number" id="units" name="units" min="1">
-            
+              
                 <label for="admin-name">Nome do Administrador:</label>
                 <input type="text" id="admin-name" name="admin-name">
-            
+              
                 <label for="email">E-mail do Administrador:</label>
                 <input type="email" id="email" name="email">
-            
+              
                 <label for="phone">Telefone do Administrador:</label>
                 <input type="tel" id="phone" name="phone">
-            
+              
                 <label for="schedule">Dias/horários preferenciais para coleta:</label>
                 <input type="text" id="schedule" name="schedule">
-            
+              
                 <button type="submit">Salvar Informações</button>
               </form>
             </div>
-            
+          
+            <div class="form-config">
+              <form action="#" method="POST">
+                <h3>Endereço Completo do Condomínio</h3>
+          
+                <label for="address">Endereço:</label>
+                <input type="text" id="address" name="address">
+              
+                <label for="city">Cidade:</label>
+                <input type="text" id="city" name="city">
+          
+                <label for="state">Estado:</label>
+                <input type="text" id="state" name="state">
+              
+                <label for="zip">CEP:</label>
+                <input type="text" id="zip" name="zip">
+              
+                <button type="submit">Salvar Endereço</button>
+              </form>
+            </div>
           </div>
+
         </div>
       </div>
     </main>

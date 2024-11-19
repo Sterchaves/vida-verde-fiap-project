@@ -170,16 +170,25 @@ main {
 .content .overview h2{
   margin: 2rem 0 2rem 0;
   font-size: 36px;
+  color: black;
+
 }
 
 .content .overview h3{
   margin: 0;
   font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 .content .overview p{
   margin: 0.5rem 0;
   font-size: 26px;
+  color: white;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 .content .overview img{
@@ -223,62 +232,57 @@ main {
 
 
 /* MVP - CONFIGURAÇÕES CONTENT */
-
-/* MVP - CONFIG NAVBAR */
-.container-mvp-app   .content .config-navbar{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: brown;
-  height: 50px;
-
-}
-
-.container-mvp-app   .content .config-navbar li{
-  margin: 0 1rem;
-  font-size: 18px;
-}
-
-.container-mvp-app   .content .config-navbar a{
- color: black; 
-}
-
-.container-mvp-app   .content .config-navbar a:hover{
-  text-decoration: underline;
- }
  
-
-.container-mvp-app   .content .content-config{
-  background-color: rgb(155, 90, 90);
-  width: 40%;
-  height:500px;
-  margin: 2rem auto;
+.form-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2.5rem;
+  justify-content: space-between;
+  gap: 2rem; 
 }
 
-.container-mvp-app   .content .content-config input{
-  border: 1px solid black;
+.form-container  .form-config {
+  width: 48%; 
   border-radius: 1.5rem;
-  font-size: 16px;
-  margin-bottom: 5px;
+  margin: 2rem;
 }
 
-.container-mvp-app   .content .content-config label{
-  align-self: flex-start;
+.form-container form {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.container-mvp-app   .content .content-config button{
-  background-color: rgb(9, 9, 143);
+.form-container h3 {
+  margin-bottom: 1rem;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 0.7rem;
+  text-align: start;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  padding: 0.8rem 1.5rem;
+  background-color: #007bff;
   color: white;
-  padding: 0.5rem 2rem;
-  border-radius: 1.5rem;
-  font-size: 20px;
-  margin: 1rem 0 0 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
 }
- 
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
 
 
 /* HISTORIC */
@@ -286,10 +290,9 @@ main {
 .content-historic table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 1rem 0;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 5rem 0;
 }
 
 .content-historic th, .content-historic td {

@@ -14,7 +14,6 @@ document.getElementById("filterForm").addEventListener("change", function() {
         const blocoMatch = bloco.includes(blocoFilter) || blocoFilter === "";
         const categoriaMatch = categoria.includes(categoriaFilter) || categoriaFilter === "";
 
-        // Se todos os filtros corresponderem, mostramos a linha, caso contrário, ocultamos
         if (apartamentoMatch && blocoMatch && categoriaMatch) {
             row.style.display = "";
         } else {
@@ -23,7 +22,6 @@ document.getElementById("filterForm").addEventListener("change", function() {
     });
 });
 
-// Função para calcular os totais de cada categoria
 function updateOverview() {
     const tableRows = document.querySelectorAll("#tableBody tr");
     const totals = {
@@ -42,7 +40,6 @@ function updateOverview() {
         }
     });
 
-    // Atualizando a tabela de visão geral com os totais
     const overviewTableBody = document.getElementById("overviewTableBody");
     overviewTableBody.innerHTML = `
         <tr><td>Metal</td><td>${totals.Metal.toFixed(2)}</td></tr>
@@ -52,5 +49,4 @@ function updateOverview() {
     `;
 }
 
-// Chamando a função de atualização ao carregar a página para garantir que a tabela de visão geral seja inicializada corretamente
 window.onload = updateOverview;
