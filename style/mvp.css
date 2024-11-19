@@ -125,13 +125,16 @@ main {
 .container-mvp-app .navbar {
   display: flex;
   flex-direction: column;
-  background-color: blueviolet;
+  background-color: rgb(0, 84, 180);
   width: 20%;
+  color: rgb(255, 255, 255);
+
 }
 
 .container-mvp-app   .navbar a {
-  color: black;
   font-size: 22px;
+  color: rgb(255, 255, 255);
+
 }
 
 .container-mvp-app   .navbar li{
@@ -139,14 +142,18 @@ main {
 
 }
 
+.container-mvp-app   .navbar li:hover{
+  text-decoration: underline;
+}
+
 .container-mvp-app   .navbar .logo{
   font-family: calistoga;
-  margin: 1rem 0 1rem 0;
+  margin: 2.5rem 0 1rem 0;
   font-size: 33px;
 }
 
 .container-mvp-app   .content {
-  background-color: rgb(10, 50, 228);
+  background-color: rgb(219, 223, 243);
   width: 80%;
   overflow: auto;
 }
@@ -154,7 +161,65 @@ main {
 
 
 /* MVP - HOME CONTENT */
+.content .overview{
+  margin:  4rem auto;
+  width: 90%;
+  height: 400px;
+}
 
+.content .overview h2{
+  margin: 2rem 0 2rem 0;
+  font-size: 36px;
+}
+
+.content .overview h3{
+  margin: 0;
+  font-size: 24px;
+}
+
+.content .overview p{
+  margin: 0.5rem 0;
+  font-size: 26px;
+}
+
+.content .overview img{
+  width: auto;
+  height: 100px;
+}
+
+
+
+.content .overview .container-view{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.content .overview .container-view .trash{
+  width: 20%;
+  height: 220px;
+  border-radius: 1.5rem;
+  padding: 1rem 0.5rem;
+}
+
+/* TRASH COLORS */
+
+.content .overview .container-view .trash.one{
+  background-color: rgb(175, 0, 0);
+}
+
+.content .overview .container-view .trash.two{
+  background-color: rgb(68, 151, 0);
+}
+
+.content .overview .container-view .trash.three{
+  background-color: rgb(1, 105, 241);
+}
+
+.content .overview .container-view .trash.four{
+  background-color: rgb(255, 238, 0);
+}
 
 
 /* MVP - CONFIGURAÇÕES CONTENT */
@@ -212,5 +277,63 @@ main {
   border-radius: 1.5rem;
   font-size: 20px;
   margin: 1rem 0 0 0;
+}
+ 
+
+
+/* HISTORIC */
+
+.content-historic table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 5rem 0;
+}
+
+.content-historic th, .content-historic td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.content-historic th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content-historic tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.content-historic tr:hover {
+  background-color: #ddd;
+}
+
+
+.content-historic .content-historic .filter-container {
+  margin-bottom: 10px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;  
+}
+
+.filter-container #filterForm{
+display:flow-root;
+margin: 2rem auto;
+}
+
+.content-historic .filter-container label {
+  margin-right: 10px;
+}
+
+.content-historic .filter-container select, .filter-container input {
+  padding: 8px;
+  margin: 0;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
  

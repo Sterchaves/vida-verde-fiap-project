@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MVP - HOME</title>
+
+    <link rel="stylesheet" href="../../style/reset.css" />
+    <link rel="stylesheet" href="../../style/header.css" />
+    <link rel="stylesheet" href="../../style/mvp.css" />
+    <link rel="stylesheet" href="../../style/footer.css" />
+
+    <!--ROBOTO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CALISTOGA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--OPEN SANS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Calistoga&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--BEBAS NEUE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Calistoga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="main-logo">Vida Verde</a>
+        <ul>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../challenges.html">Desafios</a></li>
+          <li><a href="../solution.html">Como Funciona</a></li>
+          <li><a href="../mvp.html">Demonstração</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-mvp-app home-mvp">
+        <ul class="navbar">
+          <li class="logo">Vida Verde</li>
+          <li><a href="./mvp-home.html">Home</a></li>
+          <li><a href="#">Histórico de Coleta</a></li>
+          <li><a href="./mvp-config.html">Perfil</a></li>
+        </ul>
+
+        <div class="content">
+          <div class="content-historic">
+            <div class="filter-container">
+                <form id="filterForm">
+                    <label for="apartamento">Apartamento:</label>
+                    <select id="apartamento" name="apartamento">
+                        <option value="">Todos</option>
+                        <option value="101">Apt. 101</option>
+                        <option value="102">Apt. 102</option>
+                        <option value="103">Apt. 103</option>
+                        <option value="104">Apt. 104</option>
+                        <option value="105">Apt. 105</option>
+                        <option value="106">Apt. 106</option>
+                    </select>
+        
+                    <label for="bloco">Bloco:</label>
+                    <select id="bloco" name="bloco">
+                        <option value="">Todos</option>
+                        <option value="Bloco A">Bloco A</option>
+                        <option value="Bloco B">Bloco B</option>
+                        <option value="Bloco C">Bloco C</option>
+                    </select>
+        
+                    <label for="categoria">Categoria:</label>
+                    <select id="categoria" name="categoria">
+                        <option value="">Todas</option>
+                        <option value="Metal">Metal</option>
+                        <option value="Vidro">Vidro</option>
+                        <option value="Papel">Papel</option>
+                        <option value="Plástico">Plástico</option>
+                    </select>
+        
+                </form>
+            </div>
+            
+               <!-- Tabela de Visão Geral -->
+    <h2>Visão Geral de Materiais por Categoria</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Categoria do Resíduo</th>
+                <th>Total (kg)</th>
+            </tr>
+        </thead>
+        <tbody id="overviewTableBody">
+            <tr>
+                <td>Metal</td>
+                <td>10.5</td> <!-- Total de Metal -->
+            </tr>
+            <tr>
+                <td>Vidro</td>
+                <td>5.3</td> <!-- Total de Vidro -->
+            </tr>
+            <tr>
+                <td>Papel</td>
+                <td>5.5</td> <!-- Total de Papel -->
+            </tr>
+            <tr>
+                <td>Plástico</td>
+                <td>4.1</td> <!-- Total de Plástico -->
+            </tr>
+        </tbody>
+    </table>
+    <h2>Histórico</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Apartamento</th>
+                        <th>Bloco</th>
+                        <th>Categoria do Resíduo</th>
+                        <th>Quantidade (kg)</th>
+                        <th>Data da Coleta</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td>Apt. 101</td>
+                        <td>Bloco A</td>
+                        <td>Metal</td>
+                        <td>3.5</td>
+                        <td>20/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Apt. 102</td>
+                        <td>Bloco B</td>
+                        <td>Vidro</td>
+                        <td>2.0</td>
+                        <td>20/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Apt. 103</td>
+                        <td>Bloco A</td>
+                        <td>Vidro</td>
+                        <td>1.8</td>
+                        <td>20/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Apt. 104</td>
+                        <td>Bloco C</td>
+                        <td>Metal</td>
+                        <td>4.0</td>
+                        <td>21/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Apt. 105</td>
+                        <td>Bloco B</td>
+                        <td>Papel</td>
+                        <td>2.5</td>
+                        <td>21/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Apt. 106</td>
+                        <td>Bloco A</td>
+                        <td>Metal</td>
+                        <td>3.0</td>
+                        <td>21/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Apt. 107</td>
+                        <td>Bloco B</td>
+                        <td>Plástico</td>
+                        <td>1.2</td>
+                        <td>21/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Apt. 108</td>
+                        <td>Bloco A</td>
+                        <td>Plástico</td>
+                        <td>0.9</td>
+                        <td>22/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Apt. 109</td>
+                        <td>Bloco C</td>
+                        <td>Papel</td>
+                        <td>3.0</td>
+                        <td>22/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Apt. 110</td>
+                        <td>Bloco B</td>
+                        <td>Vidro</td>
+                        <td>1.5</td>
+                        <td>22/11/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Apt. 111</td>
+                        <td>Bloco C</td>
+                        <td>Plástico</td>
+                        <td>2.0</td>
+                        <td>23/11/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="line"></div>
+      <p>@2024</p>
+    </footer>
+
+    <script src="../../script/script.js"></script>
+  </body>
+</html>

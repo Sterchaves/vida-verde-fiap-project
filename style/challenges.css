@@ -96,6 +96,7 @@ margin-bottom: 2rem;
     height: 21rem;
     background: no-repeat center center;
     background-size: cover;
+    border-radius: 2.5rem;
 }
 
 .challenge .image-challenge.one{
