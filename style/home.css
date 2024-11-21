@@ -103,7 +103,7 @@ iframe{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding: 0 20px 0 40px;
+    padding: 0 0 0 40px;
     border-radius: 40px;
 }
 
@@ -112,6 +112,7 @@ iframe{
     background-color: #ffffff;
     color: #0F2167;
     width: 50%;
+    height: 100%;
     padding: 3rem;
     margin-left: 2rem;
     display: flex;
@@ -208,3 +209,71 @@ iframe{
     align-items: center;
     justify-content: center;
 }
+
+
+/* FALE CONOSCO */
+
+.container-fale-conosco {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+
+  }
+  
+  .container-fale-conosco h1 {
+    font-family: Calistoga;
+    text-align: center;
+    color: #0F2167;
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+  
+  .container-fale-conosco form {
+    display: flex;
+    flex-direction: column;
+    font-family: Open sans;
+    color:black;
+  }
+  
+  .container-fale-conosco label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:black;
+  }
+  
+  .container-fale-conosco input,
+  .container-fale-conosco textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+  }
+  
+  .container-fale-conosco input:focus,
+  .container-fale-conosco textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .container-fale-conosco button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    width: 50%;
+    margin: 1rem auto;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .container-fale-conosco button:hover {
+    background-color: #0F2167;
+  }
+  
